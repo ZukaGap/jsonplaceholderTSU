@@ -1,0 +1,10 @@
+export const DATA_RESET = "DATA_RESET";
+export const DATA_ERROR = "DATA_ERROR";
+export const DATA_SUCCESS = "DATA_SUCCESS";
+export const DATA_SAVE = "DATA_SAVE";
+export const DATA_LOADING = "DATA_LOAD";
+export const DATA_LOADING_SUCCESS = "DATA_LOAD_SUCCESS";
+export const ANSWER_LOADING = "ANSWER_LOADING";
+export const CLEAR_SEARCH_DATA = "CLEAR_SEARCH_DATA";
+export const SEARCH_DATA_SAVE = "SEARCH_DATA_SAVE";
+export const SEARCH_DATA_EMPTY = "SEARCH_DATA_EMPTY";
