@@ -21,7 +21,7 @@ export default function HomeTable(props) {
 
   return (
     <div>
-      <Header />
+      <Header search />
       <div className="cards">
         {error === "Not Found" ? <p>not found: "{searchString}"</p> : ""}
         {searchData.length

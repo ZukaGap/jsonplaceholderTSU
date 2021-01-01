@@ -4,7 +4,10 @@ const initialState = {
   data: [],
   searchData: [],
   error: null,
-  loading: null,
+  loading: false,
+  searchString: "",
+  currentPost: {},
+  currentPostComments: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -15,7 +18,7 @@ const reducer = (state = initialState, action) => {
         data: [],
         searchData: [],
         error: null,
-        loading: null,
+        loading: false,
         searchString: "",
         currentPost: {},
         currentPostComments: [],
@@ -65,6 +68,34 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         loadingAnswer: true,
+      };
+    case actionTypes.RESET_POST_COMMENT:
+      return {
+        ...state,
+        currentPostComments: [],
+        loading: false,
+        error: null,
+      };
+    case actionTypes.RESET_POST:
+      return {
+        ...state,
+        currentPost: {},
+        loading: false,
+        error: null,
+      };
+    case actionTypes.SAVE_POST_DATA:
+      return {
+        ...state,
+        currentPost: action.data,
+        loading: false,
+        error: null,
+      };
+    case actionTypes.SAVE_COMMENTS_DATA:
+      return {
+        ...state,
+        currentPostComments: action.data,
+        loading: false,
+        error: null,
       };
     default:
       return state;

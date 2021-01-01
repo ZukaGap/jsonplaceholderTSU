@@ -1,0 +1,17 @@
+.comment {
+  margin: 15px;
+}
+
+.email {
+  font-size: 12px;
+  margin: 0;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.body {
+  margin: 0;
+}

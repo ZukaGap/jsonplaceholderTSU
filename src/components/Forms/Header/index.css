@@ -21,3 +21,7 @@
   background-color: var(--white);
   margin: auto;
 }
+
+.header > a {
+  height: 80px;
+}

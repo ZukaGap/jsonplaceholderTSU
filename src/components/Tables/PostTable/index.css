@@ -1,0 +1,19 @@
+.comments {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+.post {
+  width: 800px;
+  margin: 20px auto;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 25px;
+}
+
+.card-body {
+  color: var(--black);
+}
